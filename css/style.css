@@ -255,19 +255,22 @@ margin-bottom: 10px;
 .communication-section{
   background-image: url(../images/image1.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height:500px;
   max-width:100%;
-  font-size: 10px;
   text-align: left;
   color:white;
   margin-bottom: 30px;
 } 
 
 .communication-section div{
-padding-top:30px;
-padding-left: 50%;
-padding-right:5%;
+padding-top:20px;
+
+}
+
+.communication-section .container{
+  margin-left: 50%;
+  margin-right:5%
 }
 
 .communication-section div h3{
@@ -358,5 +361,11 @@ margin-bottom: 10px;
     }
   footer p{
     font-size: 35px
+  }
+  .communication-section div h3{
+    font-size: 60px;
+  }
+  .communication-section div p{
+    font-size: 26px;
   }
 }
