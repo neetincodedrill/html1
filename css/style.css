@@ -64,7 +64,7 @@ margin-top:20px
 }  
 
 
-.banner1{
+.banner-section{
 background-image: url(../images/home_banner.png);
 background-repeat: no-repeat;
 background-size: cover;
@@ -115,7 +115,7 @@ font-size:18px
 
 /* section2 css */
 /* Column container */
-.section1{  
+.intro-section{  
 display: flex;
 flex-wrap: wrap;
 margin-top:30px;
@@ -126,7 +126,7 @@ margin: 2% 3% 2% 3%;
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
+.side-list {
 flex: 37%;
 margin-top: 7%;
 padding: 20px;
@@ -151,21 +151,20 @@ margin-bottom:10px
 }
 
 
-
 /* Main column */
-.main {
+.intro {
 flex: 63%;
 background-color: white;
 padding: 20px;
 }
 
-.main h4{
+.intro h4{
 font-family:helvetica-medium;
 font-size:20px;
 color: #0076ff;
 }
 
-.main h2{
+.intro h2{
 font-family:helvetica-bold;
 text-transform: uppercase;
 color:black;
@@ -174,7 +173,7 @@ line-height:1;
 margin-bottom: 20px;
 }
 
-.main p{
+.intro p{
 font-family: helvetica-regular;
 font-size:15px;
 margin-bottom:15px
@@ -219,12 +218,12 @@ font-size: 30px;
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-.section1{   
+.intro-section{   
   flex-direction: column;
 }
 }
 
-/* section2 ends */
+/* communication-section*/
 .lowerbackgroundImage{
 position:relative;
 text-align: center;
@@ -256,7 +255,7 @@ margin-bottom: 10px;
 
 /* footer css */
 
-.footer-container {
+footer {
 display: flex;
 justify-content: center;
 flex-direction:column;
@@ -264,21 +263,70 @@ align-items: center;
 background-color: #0076ff;
 }
 
-.footer-container div {
+footer div {
 margin: 10px;
 text-align: center;
 
 }
 
-.footer-container img{
+footer img{
 height:20%;
 width:30%;
 margin-top:20px
 }
 
-.footer-container p{
+footer p{
 font-family: kano-regular;
 font-size:20px; 
 color:white;
 margin-bottom: 10px;
+}
+
+/* media queries */
+@media screen and (min-width: 1800px) {
+  .flex-container ul a{
+    font-size:20px
+  }
+  .logo-img{
+    height:111px;
+    width:105px;
+    } 
+  .left h3{
+    font-size: 30px;
+  }
+  .left h1{
+    font-size: 82px;
+  }
+  .right h3,.right p{
+    font-size:30px
+  }
+  .list p{
+    font-size:40px
+  }
+  .intro h4{
+    font-size:30px
+  }
+  .intro h2{
+    font-size: 60px;
+  }
+  .intro p{
+    font-size: 26px;
+  }
+  button{
+    font-size:29px
+  }
+  .content h3{
+    font-size:60px ;
+  }
+  .content p{
+    font-size: 26px;
+  }
+  footer img{
+    height:168px;
+    width:298px;
+    margin-top:20px
+    }
+  footer p{
+    font-size: 35px
+  }
 }
