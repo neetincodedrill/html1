@@ -2,14 +2,14 @@
   padding:0;
   margin:0;
   text-decoration:none;
- 
+ max-width:100%;
   box-sizing: border-box;
   line-height: 1.6;
 }
 
 
 
-      @font-face {
+@font-face {
   font-family: helvetica-medium;
   src: url(../fonts/Helvetica\ Neue\ Medium.ttf);
 }
@@ -37,13 +37,13 @@
 
 /* header css */
 
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height:120px;
   }
-  
   
   nav .content .link ul{
   display:flex;
@@ -73,59 +73,53 @@ nav {
   }
   
   header .image img{
-      max-width: 100%;
+      max-width: 100%; 
       height:auto;
   }
   
   /* banner-section css */
   
-  .banner-section{
-  background-image: url(../images/home_banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position:relative;
-  min-height:450px;
-  max-width:100%;
-  font-size: 10px;
-  text-align: left;
-  color:white
+   
+  .banner-container {
+    position: relative;
+    color: white;
   }
-  
- 
-  
-  .communication{
-   line-height: 1;
-   max-width:50%;
-   padding: 50px 0 0 0;
-  }
-  
+    
   .communication h3{
-  font-family:helvetica-medium;
-  font-size:18px;
-  padding-bottom:20px
-  }
-  
+    font-family:helvetica-medium;
+    font-size:18px;
+    padding-bottom: 20px;
+    }
+    
   .communication h1{
-  font-family: helvetica-bold;
-  font-size:45px;
-  line-height:1.15;
+    font-family: helvetica-bold;
+    font-size:45px; 
+    line-height:1.15;
+    }
+    
+  .info h3{
+    font-family:helvetica-bold;
+    font-size:18px
+    }
+    
+  .info p{
+    font-family:helvetica-medium;
+    font-size:18px
+    }
+  
+  .communication {
+    position: absolute;
+    top: 95px;
+    left: 87px;
+    max-width:50%;
+    margin-right: auto;
   }
   
   .info{
-  position: absolute;
-  bottom: 45px;
-  right: 25px;
-  text-align:right;
-  }
-  
-  .info h3{
-  font-family:helvetica-bold;
-  font-size:18px
-  }
-  
-  .info p{
-  font-family:helvetica-medium;
-  font-size:18px
+    position: absolute;
+    bottom: 60px;
+    right: 33px;
+    text-align:right;
   }
   
   /* intro-section css */
@@ -298,13 +292,17 @@ nav {
 /* media queries */
 @media screen and (min-width: 1800px) {
   .container{
-    max-width:1600px;
+    max-width:1750px;
     margin-left: auto;
     margin-right: auto;
   }
 
   /* header css */
-  
+header .container{
+  max-width:1720px;
+  margin-left: auto;
+  margin-right: auto;
+}
   nav .content .link ul a{
     font-size:18px;
     padding: 10px 30px;
@@ -315,18 +313,46 @@ nav {
   }
 
   /* banner-section css */
+   
+  .banner-container {
+    position: relative;
+    color: white;
+  }
+    
   .communication h3{
-    font-size:25px;
+    font-family:helvetica-medium;
+    font-size:30px;
+    }
+    
+  .communication h1{
+    font-family: helvetica-bold;
+    font-size:82px; 
+    }
+    
+  .info h3{
+    font-family:helvetica-bold;
+    font-size:30px
+    }
+    
+  .info p{
+    font-family:helvetica-medium;
+    font-size:30px
+    }
+  
+  .communication {
+    position: absolute;
+    top: 60px;
+    left: 87px;
+    max-width:50%;
+    margin-right: auto;
   }
   
-  .communication h1{
-    font-size:60px;
+  .info{
+    position: absolute;
+    bottom: 60px;
+    right: 33px;
+    text-align:right;
   }
-
-  .info h3,.info p{
-    font-size:25px
-  }
-
   /* intro-section css */
   .intro h4{  
     font-size:25px; 
